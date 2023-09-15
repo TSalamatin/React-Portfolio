@@ -30,15 +30,17 @@ const publicProjects = [
     },
     {
         name: 'Nutrition Tracker',
-        image: 'Nutrition',
+        image: '/src/images/Logo.png',
         gitlink: 'https://github.com/TSalamatin/Nutrition-Tracker',
         deplink: 'https://tsalamatin.github.io/Nutrition-Tracker/'
         
     },
     {
-        name: 'SQL-Employee-Tracker',
-        image: '/src/images/SQL.png',
-        gitlink: 'https://github.com/TSalamatin/SQL-Employee-Tracker'
+        name: 'Basic Programming Quiz',
+        image: '/src/images/Quiz.png',
+        gitlink: 'https://github.com/TSalamatin/Tims-Programming-Quiz',
+        deplink: 'https://tsalamatin.github.io/Tims-Programming-Quiz/'
+
     },
     {
         name: 'Password-Generator',

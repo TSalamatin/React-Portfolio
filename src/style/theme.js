@@ -58,12 +58,9 @@ const theme = createTheme({
      
       },
     },
-    MUIButton: {
-      root: {
-        height: 'fit-content'
-      },
+    
       
-    }
+    
   },
 });
 

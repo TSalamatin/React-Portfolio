@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Footer() {
     return (
-        <Grid container justifyContent='space-around' >
+        <Grid container justifyContent='space-around' style={{marginTop: '2%', position: 'fixed'}} >
             <Link
                 href="https://github.com/TSalamatin"
                 target="_blank"

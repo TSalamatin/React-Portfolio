@@ -46,7 +46,7 @@ export default function App() {
          
             <BrowserRouter>
               <Header />
-              <Routes>
+              <Routes >
                 <Route path="/" element={<AboutMe />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path='/contactme' element={<ContactMe />} />
