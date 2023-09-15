@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Grid } from '@mui/material';
 
 function Header() {
+  console.log('Navigation Rendered')
   const style = {
     nav: {
       display: 'flex',

@@ -1,33 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Navigation';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import ContactMe from './components/ContactMe';
 import Resume from './components/Resume';
-import { ThemeProvider } from '@emotion/react';
-import {theme} from './style/theme'
 import Footer from './components/Footer';
+import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
+import GlobalStyles from '@mui/material/GlobalStyles';
+import theme from './style/theme';
 
 
-const style = {
-  header: {
-    width: '100%',
-    padding: '0',
-    margin: '0',
-    position: 'fixed',
-    top: '0',
-    left: '0', 
-  },
-};
-
-
-
-
-export default function App() {
-  const [projectData, setProjectData] = useState([]);
-
-  // useEffect(() => {
+ // useEffect(() => {
   //   async function fetchProjects() {
   //     try {
   //       const response = await fetch('https://api.github.com/users/TSalamatin/repos');
@@ -45,26 +30,36 @@ export default function App() {
   //   fetchProjects();
   // }, []);
 
-//TODO: Add Experience and Education Routes Later
-// Also make fetch usable
+  //TODO: Add Experience and Education Routes Later
+  // Also make fetch usable
 
+
+export default function App() {
+  const [projectData, setProjectData] = useState([]);
+
+ 
   return (
     <div>
-      <BrowserRouter>
-      <ThemeProvider theme={theme}>
-      <Header style={style.header}/>
-        <Routes>
-          <Route path="/" element={<AboutMe />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path='/contactme' element={<ContactMe/>}/>
-          <Route path='/resume' element={<Resume/>}/>
-        </Routes>
-        <Footer/>
-        </ThemeProvider>
-      </BrowserRouter>
-     
+
+      <ThemeProvider theme={createTheme(theme)}>
+        <CssBaseline>
+         
+            <BrowserRouter>
+              <Header />
+              <Routes>
+                <Route path="/" element={<AboutMe />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path='/contactme' element={<ContactMe />} />
+                <Route path='/resume' element={<Resume />} />
+              </Routes>
+              <Footer />
+            </BrowserRouter>
+         
+
+        </CssBaseline>
+      </ThemeProvider>
+
     </div>
   );
 }
-
 

@@ -31,7 +31,8 @@ const publicProjects = [
     {
         name: 'Nutrition Tracker',
         image: 'Nutrition',
-        gitlink: 'https://github.com/TSalamatin/Nutrition-Tracker'
+        gitlink: 'https://github.com/TSalamatin/Nutrition-Tracker',
+        deplink: 'https://tsalamatin.github.io/Nutrition-Tracker/'
         
     },
     {
@@ -42,16 +43,18 @@ const publicProjects = [
     {
         name: 'Password-Generator',
         image: '/src/images/Password.png',
-        gitlink: 'https://github.com/TSalamatin/Password-Generator'
+        gitlink: 'https://github.com/TSalamatin/Password-Generator',
+        deplink: 'https://tsalamatin.github.io/Password-Generator/',
     },
 ]
 
-
-export default function Portfolio() {
-    //Comment out for sorting later
+//Comment out for sorting later
     // const publicProjects = props.projects.filter((d) => !d.private)
     // console.log(publicProjects)
 
+export default function Portfolio() {
+    
+    console.log('Portfolio Rendered')
     return (
         <Grid container style={style.body}>
             {publicProjects.map((d, index) => (

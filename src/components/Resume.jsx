@@ -1,63 +1,51 @@
-import { Button, Grid, Paper } from "@mui/material"
+import React from 'react';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
-const style = {
-    container: {
-      display: 'flex',
-      flexDirection: 'column',
-      marginTop: '10%',
-      marginLeft: '10%',
-    },
-    content: {
-      color: 'white',
-      display: 'flex',
-      flexDirection: 'column',
-      width: '80%',
-      padding: '2%',
-      fontFamily: 'Trebuchet MS'
-    },
-    header:{
-      fontSize: '200%',
-      fontFamily: 'Georgia',
-      marginBottom: '20px'
-  
-    },
-    button: {
-        justifyContent: 'flex-end',
-        width: 'fit-content'
-    }
-  }
 
 export default function Resume() {
+  console.log('Resume Rendered');
 
-    return (
-        <Grid container style={style.container}>
-
-            <Paper elevation={3} style={style.content}>
-                
-                <h1 style={style.header} className="header">My Resume</h1>
-
-                <h2 className="body"> Skills </h2>
-                <ul>
-                    <li>
-                        HTML
-                    </li>
-                    <li>
-                        CSS
-                    </li>
-                    <li>
-                        Javascript: including Express, Node, React
-                    </li>
-                    <li>
-                        SQL, and NoSQL
-                    </li>
-                    <li>
-                    Object–relational mapping
-                    </li>
-                </ul>
-                <Button style={style.button}>
-                    Download 
-                </Button>
-            </Paper>
+  return (
+    <Grid container alignItems="center" spacing={2} style={{marginTop: '5%'}}>
+      <Grid item xs={12} sm={6}>
+        <Grid container justifyContent="flex-end">
+          <Paper elevation={5} style={{ padding: '16px', marginRight: '8px', width: '60%' }}>
+            <Typography variant="h2" gutterBottom>
+              My Resume
+            </Typography>
+            <Typography variant="h3" gutterBottom>
+              Skills
+            </Typography>
+            <ul>
+              <Typography component="li">
+                HTML
+              </Typography>
+              <Typography component="li">
+                CSS
+              </Typography>
+              <Typography component="li">
+                JavaScript: including Express, Node, React
+              </Typography>
+              <Typography component="li">
+                SQL, and NoSQL
+              </Typography>
+              <Typography component="li">
+                Object relational mapping
+              </Typography>
+            </ul>
+          </Paper>
         </Grid>
-    )
+      </Grid>
+      <Grid item xs={12} sm={6}>
+        <Grid container justifyContent='flex-start'>
+          <Button variant="outlined" style={{ marginTop: '8px'}}>
+            Have a copy!
+          </Button>
+        </Grid>
+      </Grid>
+    </Grid>
+  );
 }

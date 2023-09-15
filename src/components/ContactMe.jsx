@@ -23,7 +23,7 @@ const style = {
 }
 
 export default function ContactMe() {
-
+    console.log('Contacts Rendered')
     return (
         <div>
             <Paper container style={style.container}>
