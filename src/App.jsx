@@ -8,8 +8,8 @@ import ContactMe from './components/ContactMe';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
-import GlobalStyles from '@mui/material/GlobalStyles';
 import theme from './style/theme';
+
 
 
  // useEffect(() => {
