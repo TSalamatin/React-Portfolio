@@ -7,9 +7,9 @@ https://tsalamatin.github.io/React-Portfolio/
  For the time being are attached simple projects and thir deployments. I plan to use Github API to loop through my public projects, and display them on my portfolio
 
 
-#Contact
+##Contact
 
-    Github: https://github.com/TSalamatin
+Github: https://github.com/TSalamatin
 
-    Email: [TJSalamatin@gmail.com](mailto:TJSalamatin@gmail.com)
+Email: [TJSalamatin@gmail.com](mailto:TJSalamatin@gmail.com)
     
