@@ -9,7 +9,7 @@ https://tsalamatin.github.io/React-Portfolio/
 
 ##Contact
 
-    Github: https://github.com/TSalamatin
+Github: https://github.com/TSalamatin
 
-    Email: [TJSalamatin@gmail.com](mailto:TJSalamatin@gmail.com)
+Email: [TJSalamatin@gmail.com](mailto:TJSalamatin@gmail.com)
     
