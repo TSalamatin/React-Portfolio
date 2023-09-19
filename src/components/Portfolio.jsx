@@ -12,7 +12,7 @@ const style = {
 const publicProjects = [
     {
         name: 'Weather API',
-        image: './public/images/Weather.png',
+        image: '/public/images/Weather.png',
         gitlink: 'https://github.com/TSalamatin/Weather-API',
         deplink: 'https://tsalamatin.github.io/Weather-API/',
     },
