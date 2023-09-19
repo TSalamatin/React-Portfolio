@@ -12,39 +12,39 @@ const style = {
 const publicProjects = [
     {
         name: 'Weather API',
-        image: '/src/images/Weather.png',
+        image: './public/images/Weather.png',
         gitlink: 'https://github.com/TSalamatin/Weather-API',
         deplink: 'https://tsalamatin.github.io/Weather-API/',
     },
     {
         name: 'DayJS-Day-Scheduler',
-        image: '/src/images/DayJS.png',
+        image: './public/images/DayJS.png',
         gitlink: 'https://github.com/TSalamatin/DayJS-Day-Scheduler',
         deplink: 'https://tsalamatin.github.io/DayJS-Day-Scheduler/'
     },
     {
         name: 'E-Commerce Mapping',
-        image: '/src/images/E-Commerce.png',
+        image: './public/images/E-Commerce.png',
         gitlink: 'https://github.com/TSalamatin/E-Commerce-Mapping',
         
     },
     {
         name: 'Nutrition Tracker',
-        image: '/src/images/Logo.png',
+        image: './public/images/Logo.png',
         gitlink: 'https://github.com/TSalamatin/Nutrition-Tracker',
         deplink: 'https://tsalamatin.github.io/Nutrition-Tracker/'
         
     },
     {
         name: 'Basic Programming Quiz',
-        image: '/src/images/Quiz.png',
+        image: './public/images/Quiz.png',
         gitlink: 'https://github.com/TSalamatin/Tims-Programming-Quiz',
         deplink: 'https://tsalamatin.github.io/Tims-Programming-Quiz/'
 
     },
     {
         name: 'Password-Generator',
-        image: '/src/images/Password.png',
+        image: './public/images/Password.png',
         gitlink: 'https://github.com/TSalamatin/Password-Generator',
         deplink: 'https://tsalamatin.github.io/Password-Generator/',
     },
