@@ -35,8 +35,6 @@ import theme from './style/theme';
 
 
 export default function App() {
-  const [projectData, setProjectData] = useState([]);
-
  
   return (
     <div>
